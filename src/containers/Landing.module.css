@@ -1,0 +1,52 @@
+
+
+.container {
+
+}
+
+
+.name_typography {
+    animation: alternating_font 20s infinite ease-in-out;
+}
+
+@keyframes alternating_font {
+    0% {
+        font-family: 'Pacifico', cursive;
+    }
+    10% {
+        font-family: 'Special Elite', cursive;
+    }
+    20% {
+        font-family: 'Covered By Your Grace', cursive;
+    }
+    30% {
+        font-family: 'Philosopher', sans-serif;
+    }
+    40% {
+        font-family: 'Patrick Hand', cursive;
+    }
+    50% {
+        font-family: 'Montserrat', sans-serif;
+    }
+    60% {
+        font-family: 'Great Vibes', cursive;
+    }
+    70% {
+        font-family: 'Carter One', cursive;
+    }
+    80% {
+        font-family: 'Asap', sans-serif;
+    }
+    90% {
+        font-family: 'Kaushan Script', cursive;
+    }
+    100% {
+        font-family: 'Cinzel Decorative', cursive;
+    }
+}
+
+
+
+
+
+

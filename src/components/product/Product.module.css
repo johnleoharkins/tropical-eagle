@@ -1,0 +1,8 @@
+.amazon_button{
+    background-image: url("../../data/amazonicon.png");
+    background-repeat: no-repeat;
+    background-size: 44px;
+    background-position: center;
+    height: 46px;
+    width: 50%;
+}

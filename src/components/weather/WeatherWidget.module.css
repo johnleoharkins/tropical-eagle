@@ -1,0 +1,22 @@
+
+
+.minmax {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    box-sizing: border-box;
+    height: 100%;
+    width: auto;
+    padding-bottom: 0.3em;
+
+}
+
+.minmax span{
+    font-size: 0.7em;
+
+}
+
+.current_temp {
+    font-size: 1.2em;
+}
