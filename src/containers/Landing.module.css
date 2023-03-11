@@ -1,12 +1,18 @@
 
 
-.container {
-
+.name__container {
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    width: 100%;
+    margin: 1em;
 }
 
 
 .name_typography {
     animation: alternating_font 20s infinite ease-in-out;
+    font-size: 2em;
+    width: 100%;
 }
 
 @keyframes alternating_font {
