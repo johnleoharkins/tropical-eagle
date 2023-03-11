@@ -5,7 +5,7 @@ const initialState = {
     categories: ['toys', 'collars', 'leashes', 'supplies',
         'furniture', 'health', 'treats', 'food', 'training'],
     activeCategories: [],
-    products: DOG_DATA
+    products: JSON.parse(JSON.stringify(DOG_DATA))
 }
 
 const dogSlice = createSlice({
@@ -14,7 +14,8 @@ const dogSlice = createSlice({
     reducers: {
         categoryActivated(state, action){
             console.log(action.payload)
-            state.activeCategories.push(action.payload)
+            // state.activeCategories = [...state.activeCategories, action.payload]
+            state.activeCategories = [...state.activeCategories, action.payload];
 
         },
         categoryDeactivated(state, action){

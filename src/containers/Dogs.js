@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import classes from './Dogs.module.css'
 import Page from "./Page";
-import {Chip, Divider} from "@mui/material";
+import {Chip, Divider, Paper} from "@mui/material";
 import {useLoaderData} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {DogsActions} from "../store/dogs-slice";
@@ -55,11 +55,17 @@ const ProductsList = ({activeCategory}) => {
 
     return (
         <React.Fragment>
-            <Typography variant={'h6'}>{activeCategory}</Typography>
-            <Divider variant={"subheader"} />
-            <Grid2 container >
-                {productsList}
-            </Grid2>
+            <Paper>
+                <div className={classes.category_header}>
+                    <Typography variant={'h6'}>{activeCategory}</Typography>
+                    <Divider variant={"subheader"} />
+                </div>
+
+                <Grid2 container columnSpacing={2} rowSpacing={2} >
+                    {productsList}
+                </Grid2>
+            </Paper>
+
         </React.Fragment>
     )
 }
