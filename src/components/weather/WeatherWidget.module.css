@@ -1,5 +1,9 @@
 
 
+.container{
+    box-sizing: border-box;
+}
+
 .minmax {
     display: flex;
     flex-direction: column-reverse;

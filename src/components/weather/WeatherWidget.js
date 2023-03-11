@@ -7,6 +7,7 @@ import Leaf from "./Leaf";
 import {ReactSVG} from "react-svg";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
+import StyledGrid from "../utils/StyledGrid";
 
 
 const LocationName = styled('div')(({ theme }) => ({
@@ -22,9 +23,9 @@ const WeatherWidget = () => {
     const {location, current, wind} = useSelector(state => state.weather)
 
     return(
-        <React.Fragment>
+        <div className={classes.container}>
 
-            <Grid2 container columns={6} direction={'row'} columnSpacing={2} rowSpacing={1}>
+            <StyledGrid container columns={6} direction={'row'} columnSpacing={2} rowSpacing={1}>
 
 
                 <Grid2 xs={3}>
@@ -46,8 +47,8 @@ const WeatherWidget = () => {
 
                 </Grid2>
 
-            </Grid2>
-        </React.Fragment>
+            </StyledGrid>
+        </div>
     )
 }
 

@@ -75,7 +75,7 @@ const Drawer = ({anchor}) => {
                             return listItem(icon)
                     }
                 })
-                };
+                }
             </List>
         </Box>
     );
@@ -112,19 +112,19 @@ const NavBar = () => {
 
 
     return (
-        <React.Fragment>
+        <Grid2 sm={12}>
             <AppBar position={"static"} color={"primary"} >
-                <Grid2 container direction={'row'}>
+                {/*<Grid2 container direction={'row'}>*/}
                     <Grid2 xs={10}>
                         <AppBarLabel label={'Project: Tropical Eagle'} />
                     </Grid2>
                     <Grid2 xs={2} className={classes.weathergriditem}>
                         <WeatherWidget />
                     </Grid2>
-                </Grid2>
+                {/*</Grid2>*/}
 
             </AppBar>
-        </React.Fragment>
+        </Grid2>
     )
 }
 

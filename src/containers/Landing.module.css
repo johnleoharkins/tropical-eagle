@@ -12,7 +12,7 @@
 .name_typography {
     animation: alternating_font 20s infinite ease-in-out;
     font-size: 2em;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 @keyframes alternating_font {
@@ -51,6 +51,28 @@
     }
 }
 
+
+.paragraph__container div{
+    animation: showParagraph 3s linear 1;
+    /*opacity: 0%;*/
+}
+
+.paragraph__container div:nth-child(2) {
+    animation-delay: 2s;
+}
+.paragraph__container div:nth-child(3) {
+    animation-delay: 3s;
+}
+
+
+@keyframes showParagraph {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
 
 
 
