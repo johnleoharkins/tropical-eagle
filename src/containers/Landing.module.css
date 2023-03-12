@@ -5,13 +5,16 @@
     flex-direction: row;
     min-height: 50px;
     width: 100%;
-    margin: 1em;
+    height: 100px;
+    margin: 0.1em;
 }
 
 
 .name_typography {
     animation: alternating_font 20s infinite ease-in-out;
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 0.5em;
+    justify-content: center;
     /*width: 100%;*/
 }
 

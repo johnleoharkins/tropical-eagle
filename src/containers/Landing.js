@@ -26,10 +26,10 @@ const Landing = () => {
             <StyledGrid container direction={"column"}>
                 <Grid2 sm={12}>
 
-                    {/*<div className={`${classes.name__container} ${classes.name_typography}`}>*/}
+                    <div className={`${classes.name__container} ${classes.name_typography}`}>
                     {/*    John Harkins*/}
                         <span className={classes.name_typography}>John Harkins</span>
-                    {/*</div>*/}
+                    </div>
                 </Grid2>
                     <StyledGrid container direction={"row"} rowSpacing={2} columnSpacing={2} xs={12} noWrap={false}>
                         <Grid2 sm={12} md={8} className={classes.paragraph__container}>
