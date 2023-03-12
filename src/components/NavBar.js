@@ -13,6 +13,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import {NavbarActions} from "../store/navbar-slice";
 import {useNavigate} from "react-router-dom";
+import {PregnantWoman} from "@mui/icons-material";
 
 const AppBarLabel = ({label}) => {
     return (
@@ -65,10 +66,13 @@ const Drawer = ({anchor}) => {
 
                     switch(menuItemIconName) {
                         case ('home'):
-                           icon = (<HomeIcon/>)
+                           icon = (<HomeIcon />)
                             return listItem(icon)
                         case ('pets'):
-                            icon = (<PetsIcon/>)
+                            icon = (<PetsIcon />)
+                            return listItem(icon)
+                        case ('pregnantWoman'):
+                            icon = (<PregnantWoman />)
                             return listItem(icon)
                         default:
                             icon = (<ContactPageIcon />)

@@ -23,6 +23,11 @@ const initialState = {
             active: false,
             icon: 'contactPage'
         },
+        {
+            name: 'Pawghalla',
+            active: false,
+            icon: 'pregnantWoman'
+        },
     ]
 }
 
